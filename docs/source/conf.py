@@ -119,20 +119,12 @@ html_css_files = [
 	'css/codeblock_tab.css',
 ]
 
-
-# Show a deeper toctree in the sidebar
-# https://stackoverflow.com/questions/27669376/show-entire-toctree-in-read-the-docs-sidebar
+# https://pradyunsg.me/furo/customisation/
 html_theme_options = {
-	'navigation_depth': 6,
 	'sidebar_hide_name': True,
 	"source_repository": "https://github.com/MCDReforged/MCDReforged",
 	"source_branch": "master",
 	"source_directory": "docs/source",
-	"light_css_variables": {
-		"color-brand-primary": "#333333",
-		"color-brand-content": "#4C6EF5",
-		'color-sidebar-background': '#fafafa',
-	},
 }
 
 html_logo = '../../logo_long.png'
