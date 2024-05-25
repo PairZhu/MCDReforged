@@ -101,7 +101,7 @@ def setup(app: 'Sphinx'):
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'furo'
 
 html_static_path = ['../static']
 
@@ -130,10 +130,18 @@ html_js_files = [
 # https://stackoverflow.com/questions/27669376/show-entire-toctree-in-read-the-docs-sidebar
 html_theme_options = {
 	'navigation_depth': 6,
-	'logo_only': True,
+	'sidebar_hide_name': True,
+	"source_repository": "https://github.com/MCDReforged/MCDReforged",
+	"source_branch": "master",
+	"source_directory": "docs/source",
+	"light_css_variables": {
+		"color-brand-primary": "#333333",
+		"color-brand-content": "#4C6EF5",
+		'color-sidebar-background': '#fafafa',
+	},
 }
 
-html_logo = 'banner.png'
+html_logo = '../../logo_long.png'
 
 
 # -- Options for sphinx-intl -------------------------------------------------
