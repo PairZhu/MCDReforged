@@ -10,3 +10,4 @@ sphinx_copybutton      # add copy button on codeblock
 sphinxcontrib-mermaid  # add mermaid graph support
 sphinx_inline_tabs     # codeblock tabs are nice
 sphinx-prompt          # make ">>>" prefix in prompt section unselectable
+sphinx-docsearch       # Algolia Docsearch

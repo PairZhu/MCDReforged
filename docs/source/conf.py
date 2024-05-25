@@ -66,6 +66,10 @@ extensions = [
 	# Mermaid graphs
 	# https://github.com/mgaitan/sphinxcontrib-mermaid
 	'sphinxcontrib.mermaid',
+
+	# Algolia DocSearch
+	# https://pypi.org/project/sphinx-docsearch
+	'sphinx_docsearch',
 ]
 
 source_suffix = ['.rst']
@@ -109,20 +113,10 @@ html_css_files = [
 	# Save the table width
 	# override wide tables in RTD theme
 	# https://rackerlabs.github.io/docs-rackspace/tools/rtd-tables.html
-	'css/theme_overrides.css',  
-
-	# Algolia Docsearch
-	# https://docsearch.algolia.com/docs/DocSearch-v3
-	'css/algolia.css',
-	'https://cdn.jsdelivr.net/npm/@docsearch/css@3',
+	'css/theme_overrides.css',
 
 	# Tweak styles of the sphinx_inline_tabs extension
 	'css/codeblock_tab.css',
-]
-
-html_js_files = [
-	('https://cdn.jsdelivr.net/npm/@docsearch/js@3', {'defer': 'defer'}),
-	('js/algolia.js', {'defer': 'defer'})
 ]
 
 
@@ -186,3 +180,9 @@ def autodoc_setup(app: 'Sphinx'):
 	app.connect('autodoc-skip-member', autodoc_skip_member_handler)
 
 
+# -- Options for sphinx_docsearch -------------------------------------------------
+# https://pypi.org/project/sphinx-docsearch
+
+docsearch_app_id = "A1XIV9INYQ"
+docsearch_api_key = "43120950d3053488e5146d70643f567f"
+docsearch_index_name = "mcdreforgeddocs"
