@@ -2,6 +2,7 @@
 sphinx>=6.2.1               # core
 sphinx-intl>=2.1.0          # locale
 furo>=2024.5.6              # the theme of the webside
+sphinxcontrib-jquery        # theme might need this, in case it doesn't exist
 Babel==2.15.0               # Unified the version to prevent different versions from appearing in .po comments
 
 # extensions
